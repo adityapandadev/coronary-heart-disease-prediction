@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   
+    <link href="/static/style.css" rel="stylesheet" />
+    
+</head>
+<body>
+<!-- NAvigation bar -->
+  <div class="w3-bar  w3-gradient nav1">
+        <a href="/" class="w3-bar-item  w3-button w3-mobile">CHD-Pred</a>
+        <a href="{% url 'cxcform' %}" class="w3-bar-item w3-button w3-mobile">Form</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile">Github</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile">Documentation</a>
+      </div>
+<br>
+
+{% comment %} MODAL {% endcomment %}
+
+{% if messages %}
+   
+    {% for message in messages %}
+
+    
+    <p align="center"><button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">View Result</button></p>
+     
+     <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top">
+      <header class="w3-container w3-modal-bg"> 
+        {% comment %} <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span> {% endcomment %}
+        <h3 align="center">Your Result</h3>
+      </header>
+      <div style="font-size:1.5rem; padding:2rem" class="w3-container">
+
+           {{ message }}
+   
+    </div>
+       <footer class="w3-container w3-modal-bg">
+        <p align="center"><a href="/" class="w3-button w3-white">Done</a></p>
+      </footer>
+    </div>
+  </div>
+   {% endfor %}
+   {% endif %} 
+</div> 
+
+{% comment %} FORM {% endcomment %}
+
+
+<div class="container container-center w3-card w3-animate-bottom">
+
+    
+  <form method = "POST">
+  <h1 align="center" class="heading-font">Enter Your Details</h1>
+        {% csrf_token %}
+        {{form|linebreaks}}
+        <button type='submit' class="btn btn-dark btn-block">submit</button>
+    </form>   
+    </div>    
+   
+<br>
+  <footer class="footer">
+   
+    <ul class="social-link list-non-bullet">
+        <li class="list-item-inline"><h5> Know US.</h5></li>
+        <li class="list-item-inline"><a  class="link" href="https://www.linkedin.com/in/aditya-panda/" target="blank">Aditya Panda</a></li>
+        <li class="list-item-inline"><a  class="link" href="#">Madhvi Thakur</a></li>
+        
+
+    </ul>
+    <div class="footer-header">Made with ❤ by Aditya and Madhvi under Guidance of Prof. Seira Shinde, HoD CSE Departrment.</div>
+</footer>
+{% comment %} This Web App is a Project work of Aditya and Madhvi under Guidance of Prof. Seira Shinde, HoD CSE Departrment.(BIT-Raipur){% endcomment %}
+{% comment %} © Copyright 2020 Bhilai institute of Technology , Raipur  {% endcomment %}
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

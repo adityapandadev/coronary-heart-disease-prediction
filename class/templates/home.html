@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/homestyle.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    
+
+</head>
+<body>
+<!-- Navigation bar -->
+    <div class="w3-bar  w3-gradient nav1">
+        <a href="/" class="w3-bar-item  w3-button w3-mobile">CHD-Pred</a>
+        <a href="{% url 'cxcform' %}" class="w3-bar-item w3-button w3-mobile">Form</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile">Github</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile">Documentation</a>
+      </div>
+      
+<!-- Header -->
+<header class="w3-container  w3-center mycontainer section" >
+
+  <br><br>
+
+  <h1 class="w3-animate-top my-head heading-font">CHD-Pred</h1>
+  <p class="w3-animate-left heading-para">CHD-Pred is web app that uses machine learning to 
+  predict chances of getting coronary heart disease by taking some medical data as inputs. It is very easy 
+  to use and can be used by individual or Medical proffesionals. So what are you Waiting for. Check your 
+  heart's health now.</p>
+  <br>
+<a href="{% url 'cxcform' %}"> <button class="w3-button w3-black w3-animate-bottom">Check Now</button></a> 
+</header>
+<br>
+
+
+<!-- What is CHD -->
+<div class="container container-center w3-gradient">
+<h2 align="center" class="heading-font">What is Coronary Heart Disease?</h2>
+</div>
+<section class="section container "><p data-aos="fade-up-left">
+  <b>Coronary heart disease (CHD)</b>, or coronary artery disease, develops when the coronary arteries become 
+  too narrow. The coronary arteries are the blood vessels that supply oxygen and blood to the heart. 
+  CHD tends to develop when cholesterol builds up on the artery walls, creating plaques. 
+  These plaques cause the arteries to narrow, reducing blood flow to the heart. A clot can sometimes obstruct 
+  the blood flow, causing serious health problems. CHD can sometimes lead to heart attack. 
+  CHD causes more than 17 Million Deaths Per Year Worldwide.
+</p></section>
+<br>
+
+
+<!-- Risk Factors -->
+<div class="container container-center w3-gradient">
+  <h2 align="center" class="heading-font">Risk Factors</h2>
+</div>
+
+<section class="section container "><p data-aos="fade-up-right"><strong>Age: </strong>Genetic or lifestyle factors cause plaque to 
+  build up in your arteries as you age. In men, the risk for coronary heart disease starts to increase 
+  around age 45.Also, changes in the small blood vessels of the heart as you age raise the risk for coronary
+   microvascular disease.<br><br>
+
+   <strong>Gender: </strong>Coronary heart disease affects men and women. Obstructive coronary artery 
+   disease is more common in men. However, nonobstructive coronary artery disease is more common in women. 
+   Since the nonobstructive type is harder to diagnose, women may not be diagnosed and treated as quickly as 
+   men.<br><br>
+
+   <strong>Blood Pressure: </strong>High blood pressure is harmful to the arteries and increases
+   the risk of heart attack, heart failure and stroke. The condition
+   tends to run in families, but blood pressure is also influenced by
+   lifestyle. To prevent blood pressure from rising, it is important to
+   achieve and maintain a healthy body weight, keep alcohol intake
+   moderate, reduce salt intake, manage and reduce stress and be
+   physically active<br><br>
+
+   <strong>Diabetes: </strong>People with diabetes are at a much higher risk of coronary
+   heart disease. This increased risk is associated with high blood
+   sugar, high blood pressure and raised blood lipids.<br><br>
+
+   <strong>Smoking: </strong>Cigarette smoking, even a few a day, increases the risk of
+   heart disease. It is also responsible for 90% of lung cancers,
+   can cause cancer anywhere else in the body, bronchitis,
+   emphysema and stroke. There are thus many health benefits
+   from being a non-smoker. Even after having smoked for many
+   years, stopping smoking now will reduce CHD risk.<br><br>
+
+   <strong>Stress: </strong>A certain amount of stress may be desirable, in that it keeps
+   people alert and motivated. However, as the stress level builds,
+   especially if prolonged, it can be harmful to health.
+   Stress can exacerbate symptoms in people with pre-existing
+   heart disease, and can contribute to high blood pressure.
+   For those with high cholesterol it can lead to neglect of a
+   healthy lifestyle, such as poor eating habits or not taking
+   prescribed medication. <br>
+  </p>
+</section>
+<br>
+
+
+
+<!-- Prevent CHD -->
+<div class="container container-center w3-gradient">
+  <h2 align="center" class="heading-font">Prevent CHD</h2>
+</div>
+
+<section class="section container "><p data-aos="fade-up-left">
+  Studies show that heart-healthy living—never smoking, eating healthy, and being physically active—throughout life can prevent coronary heart disease and its complications.
+Work with your doctor to set up a plan that works for you based on your lifestyle, your home and neighborhood
+ environments, and your culture. Working with a team of healthcare providers may help with making changes 
+ in your diet, being physically active, managing other medical conditions, and helping you quit smoking.
+ </p>
+</section>
+<br>
+
+
+<!-- What Role does Machine Learning plays-->
+<div class="container container-center w3-gradient">
+  <h2 align="center" class="heading-font">What Role does Machine Learning plays in Healthcare</h2>
+</div>
+  <section class="section container "><p data-aos="fade-up-right">Machine learning in medicine has recently made headlines.
+     Google has developed a machine learning algorithm to help identify cancerous tumors on mammograms. 
+     Stanford is using a deep learning algorithm to identify skin cancer. A recent JAMA article reported 
+     the results of a deep machine-learning algorithm that was able to diagnose diabetic retinopathy in 
+     retinal images. It’s clear that machine learning puts another arrow in the quiver of clinical decision 
+     making.<br><br>
+     AI and Machine Learning continue to grow in the healthcare industry with the ever-evolving technology 
+     advancements. There have been more healthcare focused startups that deploy machine learning than it has 
+     ever been. However machine-learning models have not been implemented to the same extent in healthcare as 
+     they have been in other verticals. Firstly, machine learning is a recent technology and is far away from 
+     the state of perfection. Whether its FDA, ICMR or EMA approval, it is a long, arduous and expensive 
+     process to test, validate and approve the technology in a healthcare setting. Secondly, data privacy and 
+     security are one of the biggest barriers of machine learning adoption in healthcare. In healthcare 
+     industry, the technologies and systems must be developed so as they comply with the respective data
+      laws and rules of governing organizations.
+    </p></section>
+  <br>
+  
+
+  <!-- Consult the Doctors -->
+  <div class="container container-center w3-gradient">
+    <h2 align="center" class="heading-font">Consult Doctors</h2>
+  </div>
+  <br>
+  
+  <div class="w3-row-padding w3-grayscale" data-aos="flip-up">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/static/images/doc2.jpg" alt="John" style="width:100%">
+      <h3>Dr. Jon Snow</h3>
+      <p class="w3-opacity">+91 6361XXXX23</p>
+      <p>Highly Skilled Heart Surgeon, Speacialized in doing Angioplasty Surgery.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/static/images/doc4.jpg" alt="Jane" style="width:100%">
+      <h3>Dr. Daenerys Targaryen</h3>
+      <p class="w3-opacity">+91 6361XXXX24</p>
+      <p>Senior Doctor at XYZ Hospital with more than 8 years of Experience. Succesfully did 90+ Operations.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/static/images/doc3.jpg" alt="Mike" style="width:100%">
+      <h3>Dr. Bran Stark</h3>
+      <p class="w3-opacity">+91 6361XXXX25</p>
+      <p>Highly Skilled Heart Surgeon, Speacialized in doing Angioplasty Surgery.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/static/images/doc5.jpg" alt="Dan" style="width:100%">
+      <h3>Dr. Arya Stark</h3>
+      <p class="w3-opacity">+91 6361XXXX26</p>
+      <p>Senior Doctor at XYZ Hospital with more than 8 years of Experience. Succesfully did 90+ Operations.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+  </div>
+  <br><br>
+
+  <footer class="footer">
+   
+    <ul class="social-link list-non-bullet">
+        <li class="list-item-inline"><h5> Know Us.</h5></li>
+        <li class="list-item-inline"><a  class="link" href="https://www.linkedin.com/in/aditya-panda/" target="blank">Aditya Panda</a></li>
+        <li class="list-item-inline"><a  class="link" href="https://www.linkedin.com/in/madhvi-singh-thakur-b466451b7" target="blank">Madhvi Thakur</a></li>
+        
+
+    </ul>
+    <div class="footer-header">Made with ❤ by Aditya and Madhvi under Guidance of Prof. Seira Shinde, HoD CSE Departrment.(BIT-Raipur)</div>
+</footer>
+{% comment %} This Web App is a Project work of Aditya and Madhvi under Guidance of Prof. Seira Shinde, HoD CSE Departrment.(BIT-Raipur){% endcomment %}
+{% comment %} © Copyright 2020 Bhilai institute of Technology , Raipur  {% endcomment %}
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
+
+

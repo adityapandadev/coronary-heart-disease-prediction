@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+html{
+   background: linear-gradient(90deg, #d53369 0%, #daae51 100%);    background-repeat: no-repeat;
+}
+
+body{
+    margin: 0;
+   
+  
+  }
+
+.heading-font{
+    font-family: 'Noto Sans JP', sans-serif;
+   
+}
+
+.w3-card{
+    background-color: white;
+    box-shadow: 6px 10px #925335;
+}
+
+.w3-modal-bg{
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);    
+    background-repeat: no-repeat;
+
+}
+
+.w3-gradient{
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%); 
+    color: white; 
+
+}
+
+.nav1{
+    font-weight: bold;
+    font-size: 1.25rem;
+    color:white;
+}
+
+.container {
+     padding: 0rem 5rem;
+}
+
+.container-center {
+    /* border: 0.5rem black double; */
+    max-width: 600px;
+    padding: 1rem;
+    margin: auto;
+  }
+
+  
+
+label{
+   padding: 5px;
+}
+input{
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    width: 100%;
+    padding: 0.2rem;
+}
+select{
+    padding: 0.2rem;
+    margin: 0.2rem 0rem;
+    width: 100%;
+}
+option{
+    
+    color: brown;
+    font-weight: bolder;
+}
+
+.btn{
+    margin: 0.5rem 0rem;
+    padding: 0.5rem;
+    width:auto;
+    font-size: medium;
+    background-color: burlywood;
+    border-radius: 0.5rem;
+}
+.btn:hover{
+    background-color: chartreuse;
+}
+
+.w3-gradient{
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%); 
+    color: white; 
+
+}
+
+.list-non-bullet{
+    list-style:none;
+}
+.list-item-inline{
+    display: inline;
+    padding:0rem 0.5rem;
+}
+
+.footer{
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+    padding: 2rem 1rem;
+    text-align: center;
+    color: white;
+    border-top-right-radius: 1rem;
+}
+
+.footer .link{
+    color: white;
+}
+
+
+/*This Web App is a Project work of Aditya and Madhvi under Guidance of Prof. Seira Shinde, HoD CSE Departrment.(BIT-Raipur){% endcomment %}
+{% comment %} © Copyright 2020 Bhilai institute of Technology , Raipur */

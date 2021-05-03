@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+body{
+   margin: 0;
+}
+.heading-font{
+    font-family: 'Noto Sans JP', sans-serif;
+   
+}
+
+.w3-gradient{
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%); 
+    color: white; 
+
+}
+.nav1{
+    font-weight: bold;
+    font-size: 1.25rem;
+    color:white;
+}
+.mycontainer{
+   
+    background:linear-gradient(90deg, #d53369 0%, #daae51 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 530px;
+    background-position: bottom center;
+  }
+  
+  .heading-para{
+      font-size: 25px;
+      color: white;
+      text-align: justify;
+  }
+  .my-head{
+      color: white ;
+      font-size: 60px;
+      text-shadow: 5px 5px 3px black;
+      
+  }
+
+/* Containers */
+.container{
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+.container-center{
+    max-width: 600px;
+    margin:auto;
+}
+
+/* Section */
+.section{
+    padding: 2rem;
+}
+
+.section h1{
+    text-align: center;
+ 
+}
+.section p{
+    font-size: 1.35rem;
+    max-width: 700px;
+    margin:auto;
+    text-align: justify;
+}
+
+.list-non-bullet{
+    list-style:none;
+}
+.list-item-inline{
+    display: inline;
+    padding:0rem 0.5rem;
+}
+
+.footer{
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+    padding: 2rem 1rem;
+    text-align: center;
+    color: white;
+    border-top-right-radius: 1rem;
+}
+
+.footer .link{
+    color: white;
+}
+
+
+@media screen and ( max-width: 521px)
+  { .heading-para {
+                  font-size:20px;}
+  }
+
+  @media screen and ( max-width: 361px)
+  { .heading-para {
+                  font-size:16px;}
+    .my-head{
+             font-size: 50px;
+    } 
+  }
+
+  /*This Web App is a Project work of Aditya and Madhvi under Guidance of Prof. Seira Shinde, HoD CSE Departrment.(BIT-Raipur){% endcomment %}
+{% comment %} © Copyright 2020 Bhilai institute of Technology , Raipur */
